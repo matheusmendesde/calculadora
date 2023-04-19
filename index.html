@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="numeros">
+        <h1>Calculadora</h1>
+        <div class="restela"></div>
+        <div>
+            <button class="num" style="width: 154px;" onclick="limpar()">C</button>
+            <button class="num" style="width: 156px;" onclick="apagar()"><<</button>
+        </div>
+        <div>
+            <button class="num" onclick="numero('1')">1</button>
+            <button class="num" onclick="numero('2')">2</button>
+            <button class="num" onclick="numero('3')">3</button>
+            <button class="sinais" onclick="operador('/')">&divide;</button>
+        </div>
+        <div>
+            <button class="num" onclick="numero('4')">4</button>
+            <button class="num" onclick="numero('5')">5</button>
+            <button class="num" onclick="numero('6')">6</button>
+            <button class="sinais" onclick="operador('*')">x</button>
+        </div>
+        <div>
+            <button class="num" onclick="numero('7')">7</button>
+            <button class="num" onclick="numero('8')">8</button>
+            <button class="num" onclick="numero('9')">9</button>
+            <button class="sinais" onclick="operador('-')">-</button>
+        </div>
+        <div>
+            <button onclick="numero('.')">.</button>
+            <button class="num" onclick="numero('0')">0</button>
+            <button class="res" onclick="calcular()">=</button>
+            <button class="sinais" onclick="operador('+')">+</button>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
